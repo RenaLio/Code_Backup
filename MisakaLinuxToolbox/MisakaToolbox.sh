@@ -478,6 +478,7 @@ menu5(){
     read -rp " 请输入选项 [0-2]:" menuInput
     case $menuInput in
         1) curl -L https://raw.githubusercontents.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && bash nezha.sh ;;
+	2) serverstatus ;;
         0) menu ;;
         *) exit 1 ;;
     esac
